@@ -40,7 +40,7 @@
                         </goals>
                         <configuration>
                             <projectFile>SEO-soapui-project.xml</projectFile>
-                            <testSuite>www desktop</testSuite>
+                            <testSuite>www-desktop</testSuite>
                             <junitReport>true</junitReport>
                             <printReport>true</printReport>
                             <exportAll>true</exportAll>
@@ -55,7 +55,7 @@
                         </goals>
                         <configuration>
                             <projectFile>SEO-soapui-project.xml</projectFile>
-                            <testSuite>www mobile</testSuite>
+                            <testSuite>www-mobile</testSuite>
                             <junitReport>true</junitReport>
                             <printReport>true</printReport>
                             <exportAll>true</exportAll>
@@ -70,7 +70,7 @@
                         </goals>
                         <configuration>
                             <projectFile>SEO-soapui-project.xml</projectFile>
-                            <testSuite>pnet desktop</testSuite>
+                            <testSuite>pnet-desktop</testSuite>
                             <junitReport>true</junitReport>
                             <printReport>true</printReport>
                             <exportAll>true</exportAll>
@@ -85,7 +85,7 @@
                         </goals>
                         <configuration>
                             <projectFile>SEO-soapui-project.xml</projectFile>
-                            <testSuite>pnet mobile</testSuite>
+                            <testSuite>pnet-mobile</testSuite>
                             <junitReport>true</junitReport>
                             <printReport>true</printReport>
                             <exportAll>true</exportAll>
