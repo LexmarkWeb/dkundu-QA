@@ -39,7 +39,7 @@
                             <goal>test</goal>
                         </goals>
                         <configuration>
-                            <projectFile>SEO-soapui-project</projectFile>
+                            <projectFile>SEO-soapui-project.xml</projectFile>
                             <testSuite>www desktop</testSuite>
                             <junitReport>true</junitReport>
                             <printReport>true</printReport>
@@ -54,7 +54,7 @@
                             <goal>test</goal>
                         </goals>
                         <configuration>
-                            <projectFile>SEO-soapui-project</projectFile>
+                            <projectFile>SEO-soapui-project.xml</projectFile>
                             <testSuite>www mobile</testSuite>
                             <junitReport>true</junitReport>
                             <printReport>true</printReport>
