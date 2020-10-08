@@ -35,7 +35,7 @@
                             <outputFolder>results</outputFolder>
                         </configuration>
                     </execution>
-	       <!-- <execution>
+	        <!--<execution>
                         <id>Pubmob</id>
                         <phase>test</phase>
                         <goals>
@@ -50,7 +50,7 @@
                             <outputFolder>results</outputFolder>
                         </configuration>
                     </execution> !-->
-	       <!-- <execution>
+	        <!--<execution>
                         <id>Pnetdesk</id>
                         <phase>test</phase>
                         <goals>
@@ -65,7 +65,7 @@
                             <outputFolder>results</outputFolder>
                         </configuration>
                     </execution> !-->
-	       <!-- <execution>
+	        <!--<execution>
                         <id>Pnetmob</id>
                         <phase>test</phase>
                         <goals>
