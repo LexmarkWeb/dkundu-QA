@@ -33,14 +33,14 @@
                 </dependencies>
                 <executions>
                     <execution>
-                        <id>pubmob</id>
+                        <id>pnetdesk</id>
                         <phase>test</phase>
                         <goals>
                             <goal>test</goal>
                         </goals>
                         <configuration>
                             <projectFile>SEO-soapui-project.xml</projectFile>
-                            <testSuite>www-mobile</testSuite>
+                            <testSuite>pnet-desktop</testSuite>
                             <junitReport>true</junitReport>
                             <printReport>true</printReport>
                             <exportAll>true</exportAll>
