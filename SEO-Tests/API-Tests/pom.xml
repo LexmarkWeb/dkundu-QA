@@ -47,6 +47,21 @@
                             <outputFolder>results</outputFolder>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>WWW</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                        <configuration>
+                            <projectFile>SEO-soapui-project.xml</projectFile>
+                            <testSuite>www-mobile</testSuite>
+                            <junitReport>true</junitReport>
+                            <printReport>true</printReport>
+                            <exportAll>true</exportAll>
+                            <outputFolder>results</outputFolder>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
