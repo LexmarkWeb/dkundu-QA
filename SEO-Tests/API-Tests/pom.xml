@@ -21,7 +21,7 @@
                 <version>4.6.1</version>  
                 <executions>
                     <execution>
-                        <id>WWW</id>
+                        <id>WWW-Desktop</id>
                         <phase>test</phase>
                         <goals>
                             <goal>test</goal>
@@ -36,7 +36,7 @@
                         </configuration>
                     </execution>
 					<execution>
-                        <id>WWW</id>
+                        <id>WWW-Mobile</id>
                         <phase>test</phase>
                         <goals>
                             <goal>test</goal>
