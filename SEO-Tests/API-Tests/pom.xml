@@ -33,29 +33,14 @@
                 </dependencies>
                 <executions>
                     <execution>
-                        <id>WWW</id>
+                        <id>lexmarkW</id>
                         <phase>test</phase>
                         <goals>
                             <goal>test</goal>
                         </goals>
                         <configuration>
                             <projectFile>SEO-soapui-project.xml</projectFile>
-                            <testSuite>www</testSuite>
-                            <junitReport>true</junitReport>
-                            <printReport>true</printReport>
-                            <exportAll>true</exportAll>
-                            <outputFolder>results</outputFolder>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>PNET</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                        <configuration>
-                            <projectFile>SEO-soapui-project.xml</projectFile>
-                            <testSuite>pnet</testSuite>
+                            <testSuite>lxk-sites</testSuite>
                             <junitReport>true</junitReport>
                             <printReport>true</printReport>
                             <exportAll>true</exportAll>
