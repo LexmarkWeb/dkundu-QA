@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
-fail=`ls results/*FAILED.txt | wc -l`
-total=`ls results/*.txt | wc -l`
-# Not sure we get these, but if we do, can add them
+path="SEO-Tests/API-Tests/results/"
+fail=`ls ${path}/*FAILED.txt | wc -l`
+total=`ls ${path}/*.txt | wc -l`
 error=0
 skip=0
 
