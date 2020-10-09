@@ -1,7 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
-file="SEO-Tests/API-Tests/reports/html/overview-summary.html"
+fail=`ls results/*FAILED.txt | wc -l`
+total=`ls results/*.txt | wc -l`
+# Not sure we get these, but if we do, can add them
+error=0
+skip=0
 
-summary=$(grep "<td><a href=" $file | awk -F "</td><td>" '{printf "Total test summary.  Total:%s Error:%s Fail:%s Skip:%s", $2,$3,$4,$5}')
+summary="Total test summary.  Total:${total} Error:${error} Fail:${fail} Skip:${skip}"
 
 echo $summary
