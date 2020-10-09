@@ -33,14 +33,14 @@
                 </dependencies>
                 <executions>
                     <execution>
-                        <id>WWWdesk</id>
+                        <id>WWW</id>
                         <phase>test</phase>
                         <goals>
                             <goal>test</goal>
                         </goals>
                         <configuration>
                             <projectFile>SEO-soapui-project.xml</projectFile>
-                            <testSuite>www-desktop</testSuite>
+                            <testSuite>www</testSuite>
                             <junitReport>true</junitReport>
                             <printReport>true</printReport>
                             <exportAll>true</exportAll>
@@ -48,29 +48,14 @@
                         </configuration>
                     </execution>
  	                <execution>
-                        <id>WWWmob</id>
+                        <id>PNET</id>
                         <phase>test</phase>
                         <goals>
                             <goal>test</goal>
                         </goals>
                         <configuration>
                             <projectFile>SEO-soapui-project.xml</projectFile>
-                            <testSuite>www-mobile</testSuite>
-                            <junitReport>true</junitReport>
-                            <printReport>true</printReport>
-                            <exportAll>true</exportAll>
-                            <outputFolder>results</outputFolder>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>Pnetdesk</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                        <configuration>
-                            <projectFile>SEO-soapui-project.xml</projectFile>
-                            <testSuite>pnet-desktop</testSuite>
+                            <testSuite>pnet</testSuite>
                             <junitReport>true</junitReport>
                             <printReport>true</printReport>
                             <exportAll>true</exportAll>
