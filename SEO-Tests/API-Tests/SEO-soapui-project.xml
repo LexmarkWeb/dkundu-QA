@@ -1468,7 +1468,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.35
+def expected = 0.30
 
 try
 {
