@@ -33,7 +33,7 @@
                 </dependencies>
                 <executions>
                     <execution>
-                        <id>lexmarkW</id>
+                        <id>lexmark</id>
                         <phase>test</phase>
                         <goals>
                             <goal>test</goal>
