@@ -897,7 +897,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.20
+def expected = 0.15
 
 try
 {
@@ -1338,7 +1338,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.30
+def expected = 0.25
 
 try
 {
@@ -1494,7 +1494,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.20
+def expected = 0.15
 
 try
 {
@@ -1537,7 +1537,7 @@ catch (AssertionError e)
   <con:entry key="category" value="PERFORMANCE"/>
   <con:entry key="key" value="AIzaSyBEPLSiCqoPftna_VIHMLyIT-PycVIhQqo"/>
   <con:entry key="url" value="https://partnernet.lexmark.com/en_us/dashboard.html"/>
-</con:parameters><con:parameterOrder><con:entry>category</con:entry><con:entry>strategy</con:entry><con:entry>url</con:entry><con:entry>key</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="FR Dashboard Page" id="26c03053-28db-4e3f-b499-bcf3d4fd7dec"><con:settings/><con:config service="https://pagespeedonline.googleapis.com" resourcePath="/pagespeedonline/v5/runPagespeed" methodName="US Home page" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CN Home Page" id="42e1c69a-9a2b-4dea-a1a5-a80e07d3e142" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://pagespeedonline.googleapis.com</con:endpoint><con:request/><con:originalUri>https://pagespeedonline.googleapis.com/pagespeedonline.googleapis.comspeed</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="4cb51025-facf-4b0e-9d44-47b78ffd657c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="ecbb1a57-878a-4ff5-995c-76c5ff059e08" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+</con:parameters><con:parameterOrder><con:entry>category</con:entry><con:entry>strategy</con:entry><con:entry>url</con:entry><con:entry>key</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="FR Dashboard Page" id="26c03053-28db-4e3f-b499-bcf3d4fd7dec"><con:settings/><con:config service="https://pagespeedonline.googleapis.com" resourcePath="/pagespeedonline/v5/runPagespeed" methodName="US Home page" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="FR Dashboard Page" id="42e1c69a-9a2b-4dea-a1a5-a80e07d3e142" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://pagespeedonline.googleapis.com</con:endpoint><con:request/><con:originalUri>https://pagespeedonline.googleapis.com/pagespeedonline.googleapis.comspeed</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="4cb51025-facf-4b0e-9d44-47b78ffd657c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="ecbb1a57-878a-4ff5-995c-76c5ff059e08" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
 
 log.info "Validating lighthouseResult Score count > a specified value"
 
@@ -1823,7 +1823,7 @@ catch (AssertionError e)
   <con:entry key="category" value="PERFORMANCE"/>
   <con:entry key="key" value="AIzaSyBEPLSiCqoPftna_VIHMLyIT-PycVIhQqo"/>
   <con:entry key="url" value="https://partnernet.lexmark.com/en_us/dashboard.html"/>
-</con:parameters><con:parameterOrder><con:entry>category</con:entry><con:entry>strategy</con:entry><con:entry>url</con:entry><con:entry>key</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="FR Dashboard Page" id="3f49d4d1-2b09-4c70-b217-d172ed8665a4"><con:settings/><con:config service="https://pagespeedonline.googleapis.com" resourcePath="/pagespeedonline/v5/runPagespeed" methodName="US Home page" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CN Home Page" id="42e1c69a-9a2b-4dea-a1a5-a80e07d3e142" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://pagespeedonline.googleapis.com</con:endpoint><con:request/><con:originalUri>https://pagespeedonline.googleapis.com/pagespeedonline.googleapis.comspeed</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="4cb51025-facf-4b0e-9d44-47b78ffd657c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="ecbb1a57-878a-4ff5-995c-76c5ff059e08" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+</con:parameters><con:parameterOrder><con:entry>category</con:entry><con:entry>strategy</con:entry><con:entry>url</con:entry><con:entry>key</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="FR Dashboard Page" id="3f49d4d1-2b09-4c70-b217-d172ed8665a4"><con:settings/><con:config service="https://pagespeedonline.googleapis.com" resourcePath="/pagespeedonline/v5/runPagespeed" methodName="US Home page" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="FR Dashboard Page" id="42e1c69a-9a2b-4dea-a1a5-a80e07d3e142" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://pagespeedonline.googleapis.com</con:endpoint><con:request/><con:originalUri>https://pagespeedonline.googleapis.com/pagespeedonline.googleapis.comspeed</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="4cb51025-facf-4b0e-9d44-47b78ffd657c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="ecbb1a57-878a-4ff5-995c-76c5ff059e08" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
 
 log.info "Validating lighthouseResult Score count > a specified value"
 
