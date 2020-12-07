@@ -39,7 +39,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.60
+def expected = 0.55
 
 try
 {
@@ -975,7 +975,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.15
+def expected = 0.10
 try
 {
    assert PerformanceScore >= expected
@@ -1312,7 +1312,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.25
+def expected = 0.20
 
 try
 {
@@ -1390,7 +1390,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.15
+def expected = 0.10
 
 try
 {
@@ -1494,7 +1494,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.15
+def expected = 0.10
 
 try
 {
@@ -1858,7 +1858,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.15
+def expected = 0.10
 
 try
 {
@@ -1884,7 +1884,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.15
+def expected = 0.10
 
 try
 {
@@ -2014,7 +2014,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.15
+def expected = 0.10
 
 try
 {
