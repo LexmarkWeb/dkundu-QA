@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="db8a09d6-0155-457b-8f96-7cdbe16f3034" activeEnvironment="Default" name="support.com.prod" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="8d2b78cd-db8b-4b68-b716-c5642c10b1ab" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://support-api.web.a.lexmark.com/" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://support-api.web.dev.a.lexmark.com</con:endpoint></con:endpoints><con:resource name="Add" path="/v1/enqueue" id="15ce666f-1f28-4322-8d6c-fe473cdc00cd"><con:settings/><con:parameters/><con:method name="Add Data" id="3c75eb6e-82c7-46ec-9e86-c964c72aeb1b" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:element xmlns:enq="https://support-api.web.dev.a.lexmark.com/v1/enqueue">enq:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:enq="https://support-api.web.dev.a.lexmark.com/v1/enqueue">enq:Response</con:element></con:representation><con:request name="Add" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-api-key" value="fJ8TATyYflsm84T4KtP15nd2N4xRPYc6dbYw0HSe"/>
+  &lt;con:entry key="Content-Type" value="application/json;charset=UTF-8"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://support-api.web.a.lexmark.com</con:endpoint><con:request>{ 
+     "id": "DRI1000268", 
+     "action": "add", 
+     "type": "Utility", 
+     "fileName": "Lexmark_ScanBack_11192019.exe", 
+     "version": "5.3.0.0", 
+     "size": "12193536", 
+     "url": "https://downloads.lexmark.com/downloads/drivers/Lexmark_ScanBack_11192019.exe", 
+     "datastreams": ["n/a"], 
+     "locales": ["en_US", "es_ES"], 
+     "systems": ["Windows", "Windows 7 (64-bit)", "Windows 10 (64-bit)"], 
+     "models": ["Lexmark MX321", "Lexmark CX517", "Lexmark MX521"], 
+     "categories": ["All-In-One", "Color Laser"], 
+     "recommended": true, 
+     "userGroup": "External", 
+     "author": "Paul Cote", 
+     "owner": "pcote", 
+     "created": "2019-12-12T12:47:56", 
+     "start": "2019-12-12T12:47:56", 
+     "lastModified": "2019-12-12T12:47:56", 
+     "details": { 
+         "en_US": { 
+             "description": "Lexmark Scanback Utility", 
+             "releaseNote": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
+         }, 
+         "es_ES": { 
+             "description": "Lexmark Scanback Utility", 
+             "releaseNote": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
+         } 
+     } 
+} </con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="Edit" path="/v1/enqueue" id="15ce666f-1f28-4322-8d6c-fe473cdc00cd"><con:settings/><con:parameters/><con:method name="Edit Data" id="3c75eb6e-82c7-46ec-9e86-c964c72aeb1b" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:enq="https://support-api.web.a.lexmark.com/v1/enqueue">enq:Response</con:element></con:representation><con:request name="Edit" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-api-key" value="7EylMrRcm27ZEjGC8zYB475q0qSIdMG6txyYOH6d"/>
+  &lt;con:entry key="Content-Type" value="application/json;charset=UTF-8"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://support-api.web.a.lexmark.com</con:endpoint><con:request>{ 
+     "id": "DRI1000268", 
+     "action": "add", 
+     "type": "Utility", 
+     "fileName": "Lexmark_ScanBack_11192019.exe", 
+     "version": "5.3.0.0", 
+     "size": "12193536", 
+     "url": "https://downloads.lexmark.com/downloads/drivers/Lexmark_ScanBack_11192019.exe", 
+     "datastreams": ["n/a"], 
+     "locales": ["en_US", "es_ES"], 
+     "systems": ["Windows", "Windows 7 (64-bit)", "Windows 10 (64-bit)"], 
+     "models": ["Lexmark MX321", "Lexmark CX517", "Lexmark MX521"], 
+     "categories": ["All-In-One", "Color Laser"], 
+     "recommended": true, 
+     "userGroup": "External", 
+     "author": "Paul Cote", 
+     "owner": "pcote", 
+     "created": "2019-12-12T12:47:56", 
+     "start": "2019-12-12T12:47:56", 
+     "lastModified": "2019-12-12T12:47:56", 
+     "details": { 
+         "en_US": { 
+             "description": "Lexmark Scanback Utility", 
+             "releaseNote": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
+         }, 
+         "es_ES": { 
+             "description": "Lexmark Scanback Utility", 
+             "releaseNote": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
+         } 
+     } 
+} </con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="Delete" path="/v1/enqueue" id="15ce666f-1f28-4322-8d6c-fe473cdc00cd"><con:settings/><con:parameters/><con:method name="Delete Data" id="3c75eb6e-82c7-46ec-9e86-c964c72aeb1b" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:enq="https://support-api.web.dev.a.lexmark.com/v1/enqueue">enq:Response</con:element></con:representation><con:request name="Delete" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-api-key" value="fJ8TATyYflsm84T4KtP15nd2N4xRPYc6dbYw0HSe"/>
+  &lt;con:entry key="Content-Type" value="application/json;charset=UTF-8"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://support-api.web.a.lexmark.com</con:endpoint><con:request>{ 
+     "id": "DRI1000268", 
+     "action": "remove", 
+     "type": "Utility", 
+     "fileName": "Lexmark_ScanBack_11192019.exe", 
+     "version": "5.3.0.0", 
+     "size": "12193536", 
+     "url": "https://downloads.lexmark.com/downloads/drivers/Lexmark_ScanBack_11192019.exe", 
+     "datastreams": ["n/a"], 
+     "locales": ["en_US", "es_ES"], 
+     "systems": ["Windows", "Windows 7 (64-bit)", "Windows 10 (64-bit)"], 
+     "models": ["Lexmark MX321", "Lexmark CX517", "Lexmark MX521"], 
+     "categories": ["All-In-One", "Color Laser"], 
+     "recommended": true, 
+     "userGroup": "External", 
+     "author": "Paul Cote", 
+     "owner": "pcote", 
+     "created": "2019-12-12T12:47:56", 
+     "start": "2019-12-12T12:47:56", 
+     "lastModified": "2019-12-12T12:47:56", 
+     "details": { 
+         "en_US": { 
+             "description": "Lexmark Scanback Utility", 
+             "releaseNote": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
+         }, 
+         "es_ES": { 
+             "description": "Lexmark Scanback Utility", 
+             "releaseNote": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
+         } 
+     } 
+} </con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="GET" path="/v1/documents/${Doc-id#doc-id}" id="15ce666f-1f28-4322-8d6c-fe473cdc00cd"><con:settings/><con:parameters/><con:method name="GET" id="3c75eb6e-82c7-46ec-9e86-c964c72aeb1b" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:dip="https://support-api.web.dev.a.lexmark.com/v1/documents/dipanjana_k">dip:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/><con:element>Fault</con:element></con:representation><con:request name="GET Doc Detail" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-api-key" value="fJ8TATyYflsm84T4KtP15nd2N4xRPYc6dbYw0HSe"/>
+  &lt;con:entry key="Content-Type" value="application/json;charset=UTF-8"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://support-api.web.a.lexmark.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="fc3e527d-018e-4246-a438-9c2146cbb2ec" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://www.lexmark.com/" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://www.lexmark.com</con:endpoint></con:endpoints><con:resource name="" path="/bin/lexmark/support/solr/search.json" id="3d8df576-ac9d-4006-a988-db4d5392d8a4"><con:settings/><con:parameters><con:parameter><con:name>q</con:name><con:value/><con:style>QUERY</con:style><con:default/></con:parameter><con:parameter><con:name>model</con:name><con:value/><con:style>QUERY</con:style><con:default/></con:parameter><con:parameter><con:name>locale</con:name><con:style>QUERY</con:style></con:parameter></con:parameters><con:method name="Solr" id="f5291684-a2bb-4333-aaf6-333aa9c53ea0" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Solr Search" id="200ca69f-32c6-4233-b240-ed6b26d4e28b" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://www.lexmark.com</con:endpoint><con:request/><con:originalUri>https://www.lexmark.com/bin/lexmark/support/solr/search.json</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="q" value=""/>
+  <con:entry key="model" value="Lexmark CX310"/>
+  <con:entry key="locale" value="en_US"/>
+</con:parameters><con:parameterOrder><con:entry>q</con:entry><con:entry>model</con:entry><con:entry>locale</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="downloads" path="/bin/lexmark/api/support/v1/downloads" id="22c42d29-c289-4bf9-a67b-c7fafb561e31"><con:settings/><con:parameters><con:parameter><con:name>model</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>locale</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Install API" id="be3df075-6f96-4562-9d5d-67aafd5be058" method="GET"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>401</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Get Info" id="7a155229-a4b8-4bf1-b380-7581f6cbbbcd" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="installer-api-access" value="_in5tall_@p1~Acc3ss!_"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://www.lexmark.com</con:endpoint><con:request/><con:credentials><con:username>installer-api-access</con:username><con:password>_in5tall_@p1~Acc3ss!_</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="model" value="MB2236"/>
+  <con:entry key="locale" value="en_US"/>
+</con:parameters><con:parameterOrder><con:entry>model</con:entry><con:entry>locale</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="bbb4df7a-bc24-458c-ba3e-bc9cd152b2ea" name="support.com.prod"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="cb626c75-1e60-4d8f-b1e9-e03d040eb093" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="support.com.prod" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="restrequest" name="Add" id="98c8531d-cba3-4d2d-8fe7-fa6bb670e08a"><con:settings/><con:config service="https://support-api.web.a.lexmark.com/" resourcePath="/v1/enqueue" methodName="Add Data" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Add" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-api-key" value="7EylMrRcm27ZEjGC8zYB475q0qSIdMG6txyYOH6d"/>
+  &lt;con:entry key="Content-Type" value="application/json;charset=UTF-8"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://support-api.web.a.lexmark.com</con:endpoint><con:request>{ 
+     "id": "dipanjana_k",
+     "action": "add", 
+     "type": "Utility", 
+     "fileName": "dipanjana-through-API.exe", 
+     "version": "5.3.0.0", 
+     "size": "12193536", 
+     "url": "https://downloads.lexmark.com/downloads/drivers/Lexmark_ScanBack_11192019.exe", 
+     "datastreams": ["n/a"], 
+     "locales": ["en_US", "es_ES"], 
+     "systems": ["WINDOWS_7_X64", "WINDOWS_10_64BIT"], 
+     "models": ["LEXMARK_CX310"], 
+     "categories": ["All-In-One", "Color Laser"], 
+     "recommended": true, 
+     "userGroup": "External", 
+     "author": "dkundu", 
+     "owner": "pcote", 
+     "created": "2020-04-13T12:47:56", 
+     "start": "2020-04-13T12:47:56", 
+     "lastModified": "2020-12-09T12:47:56", 
+     "details": { 
+         "en_US": { 
+             "description": "Added through API from Dipanjana", 
+             "releaseNotes": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
+         }, 
+         "es_ES": { 
+             "description": "Agregado a través de API de Dipanjana", 
+             "releaseNote": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
+         } 
+     } 
+}</con:request><con:originalUri>https://support-api.web.dev.a.lexmark.com/v1/enqueue</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="d0bb99fd-d70d-4fb2-8cfa-a8fbf1e8554a" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="Delay after add" id="69f32bd0-5c60-48bb-97fa-89fa15516bfd"><con:settings/><con:config><delay>50000</delay></con:config></con:testStep><con:testStep type="properties" name="Doc-id" id="888e5e76-1857-48ae-b542-aea79c5b753b"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>doc-id</con:name><con:value>dipanjana_k</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="60171278-8d62-4709-9cc5-8c239e346cdf"><con:settings/><con:config><script>def data = testRunner.testCase.getTestStepByName('Add').getPropertyValue('request')
+
+def jsonSlurper = new groovy.json.JsonSlurper()
+def object = jsonSlurper.parseText(data)
+
+def value = object.id
+
+testRunner.testCase.getTestStepByName('Doc-id').setPropertyValue('doc-id',value)
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Edit" id="9ff6aece-e92e-417b-acb0-2a9ae92c9c83"><con:settings/><con:config service="https://support-api.web.a.lexmark.com/" resourcePath="/v1/enqueue" methodName="Edit Data" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Edit" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-api-key" value="7EylMrRcm27ZEjGC8zYB475q0qSIdMG6txyYOH6d"/>
+  &lt;con:entry key="Content-Type" value="application/json;charset=UTF-8"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://support-api.web.a.lexmark.com</con:endpoint><con:request>{ 
+     "id": "${Doc-id#doc-id}",
+     "action": "add", 
+     "type": "Utility-Edit", 
+     "fileName": "dipanjana-through-API.exe", 
+     "version": "5.3.0.0", 
+     "size": "12193536", 
+     "url": "https://downloads.lexmark.com/downloads/drivers/Lexmark_ScanBack_11192019.exe", 
+     "datastreams": ["n/a"], 
+     "locales": ["en_US", "es_ES"], 
+     "systems": ["WINDOWS_7_X64", "WINDOWS_10_64BIT"], 
+     "models": ["LEXMARK_CX310"], 
+     "categories": ["All-In-One", "Color Laser"], 
+     "recommended": true, 
+     "userGroup": "External", 
+     "author": "dkundu", 
+     "owner": "pcote", 
+     "created": "2020-04-13T12:47:56", 
+     "start": "2020-04-13T12:47:56", 
+     "lastModified": "2020-12-09T12:47:56", 
+     "details": { 
+         "en_US": { 
+             "description": "Added through API from Dipanjana", 
+             "releaseNotes": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
+         }, 
+         "es_ES": { 
+             "description": "Agregado a través de API de Dipanjana", 
+             "releaseNote": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
+         } 
+     } 
+}</con:request><con:originalUri>https://support-api.web.a.lexmark.com/v1/enqueue</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="ba921368-649e-441b-9ed6-b6b4be4c1866" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="Delay after Edit" id="e284cece-ee38-4e56-bf70-d87d88051c62"><con:settings/><con:config><delay>50000</delay></con:config></con:testStep><con:testStep type="restrequest" name="Get from Dynamo" id="1eb84576-47dd-4ba3-912a-517b792b26c9"><con:settings/><con:config service="https://support-api.web.a.lexmark.com/" resourcePath="/v1/documents/${Doc-id#doc-id}" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get from Dynamo" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-api-key" value="7EylMrRcm27ZEjGC8zYB475q0qSIdMG6txyYOH6d"/>
+  &lt;con:entry key="Content-Type" value="application/json;charset=UTF-8"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://support-api.web.a.lexmark.com</con:endpoint><con:request/><con:originalUri>https://support-api.web.dev.a.lexmark.com/v1/documents/dipanjana_k</con:originalUri><con:assertion type="GroovyScriptAssertion" id="2ce4ce56-f19c-4f9a-941d-7a38f61a64ef" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+log.info "Validating document id"
+
+def ResponseMessage = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
+
+def id=jsonSlurper.id
+def author=jsonSlurper.author
+def fname=jsonSlurper.fileName
+def ver=jsonSlurper.version
+def owner=jsonSlurper.owner
+def recomend=jsonSlurper.recommended
+def lang=jsonSlurper.languages
+def category=jsonSlurper.categories
+def printer=jsonSlurper.models
+
+
+try
+{
+   assert id == "dipanjana_k"
+   assert author == "dkundu"
+   assert fname == "dipanjana-through-API.exe"
+   assert ver == "5.3.0.0"
+   assert owner == "pcote"
+   assert recomend == "true"
+   assert lang == ["en","es"]
+   assert category == ["All-In-One","Color Laser"]
+   assert printer == ["Lexmark CX310"]  
+}
+catch (AssertionError e)
+{
+	log.info "Document id assertion failed"
+	throw e
+}</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="7e9ed0c7-159f-4c8f-92a5-e5fbfa4feaa0" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Solr Search after addition" id="9d5fff66-43d8-4ee7-abdf-62f7e20c9e09"><con:settings/><con:config service="https://www.lexmark.com/" resourcePath="/bin/lexmark/support/solr/search.json" methodName="Solr" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Solr Search after addition" id="4d803e5b-dc20-4b8b-8005-e56d022bcbd1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://www.lexmark.com/</con:endpoint><con:request/><con:originalUri>https://www-dev.lexmark.com/bin/lexmark/support/solr/search.json</con:originalUri><con:assertion type="JsonPath RegEx Match" id="56ba4f80-55bf-480c-b1fd-98877ba9997b" name="JsonPath RegEx Match" disabled="true"><con:configuration><path>$.[-1:].id</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>dipanjana_k</regEx></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="081171f3-468e-448d-9ce9-d7dc35869034" name="JsonPath Match"><con:configuration><path>$.[1].id</path><content>dipanjana_k</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="beb8c5e3-67dd-47d9-802d-423f4b000904" name="JsonPath RegEx Match Id" disabled="true"><con:configuration><path>$[1]:id</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>[dipanjana_k]</regEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="e2879dbc-bc84-473a-aab1-fccba2b884f1" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="q" value="*"/>
+  <con:entry key="model" value="Lexmark CX310"/>
+  <con:entry key="locale" value="en_US"/>
+</con:parameters><con:parameterOrder><con:entry>model</con:entry><con:entry>q</con:entry><con:entry>locale</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Install API" id="68dc5462-33f4-4b86-bdff-68dec54f1f76"><con:settings/><con:config service="https://www.lexmark.com/" resourcePath="/bin/lexmark/api/support/v1/downloads" methodName="Install API" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Install API" id="7a155229-a4b8-4bf1-b380-7581f6cbbbcd" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="installer-api-access" value="_in5tall_@p1~Acc3ss!_"/>
+  &lt;con:entry key="Content-Type" value="application/json "/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://www.lexmark.com</con:endpoint><con:request/><con:originalUri>https://www.lexmark.com/bin/lexmark/api/support/v1/downloads</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="fdf9957d-63b0-48a1-be2d-2a8919588899" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="9e866e6e-255c-4af6-99b9-a2e8ac40205a" name="JsonPath RegEx Match id"><con:configuration><path>$.[1].id</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>DRI1000342</regEx></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="feed594c-deea-4d85-ab44-90598b1baeb4" name="JsonPath RegEx Match title"><con:configuration><path>$.[1].title</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>Complete Postscript Level 3 Emulation Universal Fax drivers and software</regEx></con:configuration></con:assertion><con:credentials><con:username>installer-api-access</con:username><con:password>_in5tall_@p1~Acc3ss!_</con:password><con:domain/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="model" value="MB2236"/>
+  <con:entry key="locale" value="en_US"/>
+</con:parameters><con:parameterOrder><con:entry>model</con:entry><con:entry>locale</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="Delay before Delete" id="aa169594-88eb-4da0-bfa2-d3f58961a888"><con:settings/><con:config><delay>50000</delay></con:config></con:testStep><con:testStep type="restrequest" name="Delete" id="74940077-3ed7-4935-9402-709c54ff7145"><con:settings/><con:config service="https://support-api.web.a.lexmark.com/" resourcePath="/v1/enqueue" methodName="Delete Data" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-api-key" value="7EylMrRcm27ZEjGC8zYB475q0qSIdMG6txyYOH6d"/>
+  &lt;con:entry key="Content-Type" value="application/json;charset=UTF-8"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://support-api.web.a.lexmark.com</con:endpoint><con:request>{ 
+     "id": "${Doc-id#doc-id}",
+     "action": "remove"
+}</con:request><con:originalUri>https://support-api.web.dev.a.lexmark.com/v1/enqueue</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="70b8931e-f29c-4690-994d-a052e1904bb7" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="Delay after Delete" id="c573b2c4-feca-4deb-a8ec-1e670543e94f"><con:settings/><con:config><delay>50000</delay></con:config></con:testStep><con:testStep type="restrequest" name="Solr Search after deletion" id="95ab6e67-f6fb-4d63-95c4-ae1de401b9e0"><con:settings/><con:config service="https://www.lexmark.com/" resourcePath="/bin/lexmark/support/solr/search.json" methodName="Solr" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Solr Search after deletion" id="4d803e5b-dc20-4b8b-8005-e56d022bcbd1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://www.lexmark.com/</con:endpoint><con:request/><con:originalUri>https://www-dev.lexmark.com/bin/lexmark/support/solr/search.json</con:originalUri><con:assertion type="JsonPath RegEx Match" id="56ba4f80-55bf-480c-b1fd-98877ba9997b" name="JsonPath RegEx Match" disabled="true"><con:configuration><path>$.[-1:].id</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>dipanjana_k</regEx></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="081171f3-468e-448d-9ce9-d7dc35869034" name="JsonPath Match"><con:configuration><path>$.[1].id</path><content>DRI1000350</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="beb8c5e3-67dd-47d9-802d-423f4b000904" name="JsonPath RegEx Match Id"><con:configuration><path>$[1]:id</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>[dipanjana_k]</regEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="19a28bfe-5782-4cef-b4d5-80c0f7c4efee" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="q" value="*"/>
+  <con:entry key="model" value="Lexmark CX310"/>
+  <con:entry key="locale" value="en_US"/>
+</con:parameters><con:parameterOrder><con:entry>model</con:entry><con:entry>q</con:entry><con:entry>locale</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="data driven" id="b5c1c8b1-2267-4c39-b06c-2d7f8ac24ce3" disabled="true"><con:settings/><con:config><script>def inputFilePath = testRunner.testCase.testSuite.getPropertyValue("inputFile")  
+
+File file = new File(inputFilePath.toString()).eachLine{ 
+
+testRunner.testCase.testSuite.SetPropertyValue("element1",it.split(",")[0]) 
+testRunner.testCase.testSuite.SetPropertyValue("element2",it.split(",")[1])  
+
+def tc = testRunner.testCase.testSuite.testCases["TestCase_name"]  
+def runner = tc.run(null,false)  log.info ("${runner.status}") s
+
+leep 500 
+}</script></con:config></con:testStep><con:testStep type="restrequest" name="Delete defective Adds" id="cb6e7fd3-888f-494a-9b21-5b169a55b655" disabled="true"><con:settings/><con:config service="https://support-api.web.a.lexmark.com/" resourcePath="/v1/enqueue" methodName="Delete Data" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete defective Adds" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-api-key" value="7EylMrRcm27ZEjGC8zYB475q0qSIdMG6txyYOH6d"/>
+  &lt;con:entry key="Content-Type" value="application/json;charset=UTF-8"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://support-api.web.a.lexmark.com</con:endpoint><con:request>{
+     "id": "dips",
+     "action": "remove"
+}</con:request><con:originalUri>https://support-api.web.dev.a.lexmark.com/v1/enqueue</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="70b8931e-f29c-4690-994d-a052e1904bb7" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Add with Defects" id="e60c0bcc-761d-4558-a5ed-ef305eea0596" disabled="true"><con:settings/><con:config service="https://support-api.web.a.lexmark.com/" resourcePath="/v1/enqueue" methodName="Add Data" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Add with Defects" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-api-key" value="7EylMrRcm27ZEjGC8zYB475q0qSIdMG6txyYOH6d"/>
+  &lt;con:entry key="Content-Type" value="application/json;charset=UTF-8"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://support-api.web.a.lexmark.com</con:endpoint><con:request>{
+     "id": "dips",
+     "action": "add", 
+     "type": "Utility", 
+     "fileName": "dipanjana-through-API.exe", 
+     "version": "5.3.0.0", 
+     "size": "12193536", 
+     "url": "https://downloads.lexmark.com/downloads/drivers/Lexmark_ScanBack_11192019.exe", 
+     "datastreams": ["n/a"], 
+     "locales": ["en_US", "es_ES"], 
+     "systems": ["WINDOWS_7_X64", "WINDOWS_10_64BIT"], 
+     "models": ["LEXMARK_CX310", "LEXMARK_CX317"], 
+     "categories": ["All-In-One", "Color Laser"], 
+     "recommended": true, 
+     "userGroup": "External", 
+     "author": "dkundu", 
+     "owner": "dk", 
+     "created": "2020-04-13T12:47:56", 
+     "start": "2020-04-13T12:47:56", 
+     "lastModified": "2020-04-30T12:47:56", 
+     "details": { 
+         "en_US": { 
+             "description": "Dips Erroneous add attemp", 
+             "releaseNote": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
+         }, 
+         "es_ES": { 
+             "description": "Intento de adición erróneo", 
+             "releaseNote": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
+         } 
+     } 
+}</con:request><con:assertion type="Valid HTTP Status Codes" id="d0bb99fd-d70d-4fb2-8cfa-a8fbf1e8554a" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
