@@ -33,14 +33,14 @@
                 </dependencies>
                 <executions>
                     <execution>
-                        <id>WWW-QA</id>
+                        <id>WWW</id>
                         <phase>test</phase>
                         <goals>
                             <goal>test</goal>
                         </goals>
                         <configuration>
-                            <projectFile>support-com-qa-soapui-project.xml</projectFile>
-                            <testSuite>support.com.qa</testSuite>
+                            <projectFile>support-com-prod-soapui-project.xml</projectFile>
+                            <testSuite>support.com.prod</testSuite>
                             <junitReport>true</junitReport>
                             <printReport>true</printReport>
                             <exportAll>true</exportAll>
