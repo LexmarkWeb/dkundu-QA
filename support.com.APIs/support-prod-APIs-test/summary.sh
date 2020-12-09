@@ -1,6 +1,6 @@
 #!/bin/sh
 
-path=support.com.APIs/support-qa-APIs-test
+path=support.com.APIs/support-prod-APIs-test
 
 #file="LPMD-SoapUI/reports/html/overview-summary.html"
 file="${path}/reports/html/overview-summary.html"
