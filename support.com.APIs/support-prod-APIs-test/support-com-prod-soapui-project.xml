@@ -144,7 +144,7 @@
              "releaseNote": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
          } 
      } 
-}</con:request><con:originalUri>https://support-api.web.dev.a.lexmark.com/v1/enqueue</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="d0bb99fd-d70d-4fb2-8cfa-a8fbf1e8554a" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="Delay after add" id="69f32bd0-5c60-48bb-97fa-89fa15516bfd"><con:settings/><con:config><delay>100000</delay></con:config></con:testStep><con:testStep type="properties" name="Doc-id" id="888e5e76-1857-48ae-b542-aea79c5b753b"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>doc-id</con:name><con:value>dipanjana_k</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="60171278-8d62-4709-9cc5-8c239e346cdf"><con:settings/><con:config><script>def data = testRunner.testCase.getTestStepByName('Add').getPropertyValue('request')
+}</con:request><con:originalUri>https://support-api.web.dev.a.lexmark.com/v1/enqueue</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="d0bb99fd-d70d-4fb2-8cfa-a8fbf1e8554a" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="Delay after add" id="69f32bd0-5c60-48bb-97fa-89fa15516bfd"><con:settings/><con:config><delay>50000</delay></con:config></con:testStep><con:testStep type="properties" name="Doc-id" id="888e5e76-1857-48ae-b542-aea79c5b753b"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>doc-id</con:name><con:value>dipanjana_k</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="60171278-8d62-4709-9cc5-8c239e346cdf"><con:settings/><con:config><script>def data = testRunner.testCase.getTestStepByName('Add').getPropertyValue('request')
 
 def jsonSlurper = new groovy.json.JsonSlurper()
 def object = jsonSlurper.parseText(data)
@@ -186,7 +186,7 @@ testRunner.testCase.getTestStepByName('Doc-id').setPropertyValue('doc-id',value)
              "releaseNote": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
          } 
      } 
-}</con:request><con:originalUri>https://support-api.web.a.lexmark.com/v1/enqueue</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="ba921368-649e-441b-9ed6-b6b4be4c1866" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="Delay after Edit" id="e284cece-ee38-4e56-bf70-d87d88051c62"><con:settings/><con:config><delay>100000</delay></con:config></con:testStep><con:testStep type="restrequest" name="Get from Dynamo" id="1eb84576-47dd-4ba3-912a-517b792b26c9"><con:settings/><con:config service="https://support-api.web.a.lexmark.com/" resourcePath="/v1/documents/${Doc-id#doc-id}" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get from Dynamo" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+}</con:request><con:originalUri>https://support-api.web.a.lexmark.com/v1/enqueue</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="ba921368-649e-441b-9ed6-b6b4be4c1866" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="Delay after Edit" id="e284cece-ee38-4e56-bf70-d87d88051c62"><con:settings/><con:config><delay>50000</delay></con:config></con:testStep><con:testStep type="restrequest" name="Get from Dynamo" id="1eb84576-47dd-4ba3-912a-517b792b26c9"><con:settings/><con:config service="https://support-api.web.a.lexmark.com/" resourcePath="/v1/documents/${Doc-id#doc-id}" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get from Dynamo" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="x-api-key" value="7EylMrRcm27ZEjGC8zYB475q0qSIdMG6txyYOH6d"/>
   &lt;con:entry key="Content-Type" value="application/json;charset=UTF-8"/>
 &lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://support-api.web.a.lexmark.com</con:endpoint><con:request/><con:originalUri>https://support-api.web.dev.a.lexmark.com/v1/documents/dipanjana_k</con:originalUri><con:assertion type="GroovyScriptAssertion" id="2ce4ce56-f19c-4f9a-941d-7a38f61a64ef" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
@@ -223,7 +223,7 @@ catch (AssertionError e)
 {
 	log.info "Document id assertion failed"
 	throw e
-}</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="7e9ed0c7-159f-4c8f-92a5-e5fbfa4feaa0" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Solr Search after addition" id="9d5fff66-43d8-4ee7-abdf-62f7e20c9e09"><con:settings/><con:config service="https://www.lexmark.com/" resourcePath="/bin/lexmark/support/solr/search.json" methodName="Solr" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Solr Search after addition" id="4d803e5b-dc20-4b8b-8005-e56d022bcbd1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://www.lexmark.com/</con:endpoint><con:request/><con:originalUri>https://www-dev.lexmark.com/bin/lexmark/support/solr/search.json</con:originalUri><con:assertion type="JsonPath RegEx Match" id="56ba4f80-55bf-480c-b1fd-98877ba9997b" name="JsonPath RegEx Match" disabled="true"><con:configuration><path>$.[-1:].id</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>dipanjana_k</regEx></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="081171f3-468e-448d-9ce9-d7dc35869034" name="JsonPath Match"><con:configuration><path>$.[8].id</path><content>dipanjana_k</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="beb8c5e3-67dd-47d9-802d-423f4b000904" name="JsonPath RegEx Match Id" disabled="true"><con:configuration><path>$[1]:id</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>[dipanjana_k]</regEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="e2879dbc-bc84-473a-aab1-fccba2b884f1" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="9abbdf41-7a66-4d72-a63a-89bed4679549" name="Script Assertion" disabled="true"><con:configuration><scriptText>import groovy.json.JsonSlurper
+}</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="7e9ed0c7-159f-4c8f-92a5-e5fbfa4feaa0" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Solr Search after addition" id="9d5fff66-43d8-4ee7-abdf-62f7e20c9e09"><con:settings/><con:config service="https://www.lexmark.com/" resourcePath="/bin/lexmark/support/solr/search.json" methodName="Solr" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Solr Search after addition" id="4d803e5b-dc20-4b8b-8005-e56d022bcbd1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://www.lexmark.com/</con:endpoint><con:request/><con:originalUri>https://www-dev.lexmark.com/bin/lexmark/support/solr/search.json</con:originalUri><con:assertion type="JsonPath RegEx Match" id="56ba4f80-55bf-480c-b1fd-98877ba9997b" name="JsonPath RegEx Match" disabled="true"><con:configuration><path>$.[-1:].id</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>dipanjana_k</regEx></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="081171f3-468e-448d-9ce9-d7dc35869034" name="JsonPath Match"><con:configuration><path>$.[8].id</path><content>dipanjana_k</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="beb8c5e3-67dd-47d9-802d-423f4b000904" name="JsonPath RegEx Match Id" disabled="true"><con:configuration><path>$[1]:id</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>[dipanjana_k]</regEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="e2879dbc-bc84-473a-aab1-fccba2b884f1" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="9abbdf41-7a66-4d72-a63a-89bed4679549" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
 
 log.info "Validating new Push"
 
@@ -231,17 +231,41 @@ def ResponseMessage = messageExchange.response.responseContent
 def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 try{
-jsonSlurper.each //{ println it }
-{
-	for (int i = 0; i &lt;= jsonSlurper.length(); i++)
-	{
-		if (jsonSlurper.(i).id == 'dipanjana_k')
-		{
+//jsonSlurper.each{
+ log.info "Inside TRY" + jsonSlurper.(0).id
+	for (int i = 0; i &lt;= jsonSlurper.size(); i++)
+	{ 
+		if (jsonSlurper.(i).id == "dipanjana_k")
+		{log.info "Inside IF"
 		log.info "Entry Found"
 		break
 		}
 	}
 }
+
+catch (AssertionError e)
+{
+	log.info "New entry not found"
+	throw e
+}</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="1ad457e7-858f-4d62-a1e8-03965c063b09" name="array list"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+log.info "Validating new Push"
+
+def ResponseMessage = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
+
+try{
+//jsonSlurper.each{
+ log.info "Inside TRY" 
+ def idList = jsonSlurper.id.value
+	for (int i = 0; i &lt;= idList.size(); i++)
+	{ 
+		if (idList(i) == "dipanjana_k")
+		{log.info "Inside IF"
+		log.info "Entry Found"
+		break
+		}
+	}
 }
 
 catch (AssertionError e)
