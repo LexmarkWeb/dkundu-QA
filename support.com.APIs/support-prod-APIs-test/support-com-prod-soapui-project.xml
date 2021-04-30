@@ -280,7 +280,7 @@ catch (AssertionError e)
 </con:parameters><con:parameterOrder><con:entry>model</con:entry><con:entry>q</con:entry><con:entry>locale</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Install API" id="68dc5462-33f4-4b86-bdff-68dec54f1f76"><con:settings/><con:config service="https://www.lexmark.com/" resourcePath="/bin/lexmark/api/support/v1/downloads" methodName="Install API" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Install API" id="7a155229-a4b8-4bf1-b380-7581f6cbbbcd" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="installer-api-access" value="_in5tall_@p1~Acc3ss!_"/>
   &lt;con:entry key="Content-Type" value="application/json "/>
-&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://www.lexmark.com</con:endpoint><con:request/><con:originalUri>https://www.lexmark.com/bin/lexmark/api/support/v1/downloads</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="fdf9957d-63b0-48a1-be2d-2a8919588899" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="9e866e6e-255c-4af6-99b9-a2e8ac40205a" name="JsonPath RegEx Match id"><con:configuration><path>$.[0].id</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>FW5882233983</regEx></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="feed594c-deea-4d85-ab44-90598b1baeb4" name="JsonPath RegEx Match title"><con:configuration><path>$.[0].title</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>MXLSG.074.250.zip</regEx></con:configuration></con:assertion><con:credentials><con:username>installer-api-access</con:username><con:password>_in5tall_@p1~Acc3ss!_</con:password><con:domain/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://www.lexmark.com</con:endpoint><con:request/><con:originalUri>https://www.lexmark.com/bin/lexmark/api/support/v1/downloads</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="fdf9957d-63b0-48a1-be2d-2a8919588899" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="9e866e6e-255c-4af6-99b9-a2e8ac40205a" name="JsonPath RegEx Match id"><con:configuration><path>$.[0].id</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>FW5882365975</regEx></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="feed594c-deea-4d85-ab44-90598b1baeb4" name="JsonPath RegEx Match title"><con:configuration><path>$.[0].title</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>MXLSG.074.258.zip</regEx></con:configuration></con:assertion><con:credentials><con:username>installer-api-access</con:username><con:password>_in5tall_@p1~Acc3ss!_</con:password><con:domain/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
   <con:entry key="model" value="MB2236"/>
   <con:entry key="locale" value="en_US"/>
 </con:parameters><con:parameterOrder><con:entry>model</con:entry><con:entry>locale</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="Delay before Delete" id="aa169594-88eb-4da0-bfa2-d3f58961a888"><con:settings/><con:config><delay>50000</delay></con:config></con:testStep><con:testStep type="restrequest" name="Delete" id="74940077-3ed7-4935-9402-709c54ff7145"><con:settings/><con:config service="https://support-api.web.a.lexmark.com/" resourcePath="/v1/enqueue" methodName="Delete Data" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
@@ -417,7 +417,40 @@ leep 500
      "owner": "pcote", 
      "created": "2020-04-13T12:47:56", 
      "start": "2020-04-13T12:47:56", 
-     "lastModified": "2021-03-16T12:47:56", 
+     "lastModified": "2021-04-12T12:47:56", 
+     "details": { 
+         "en_US": { 
+             "description": "Added through API from Dipanjana", 
+             "releaseNotes": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
+         }, 
+         "es_ES": { 
+             "description": "Agregado a través de API de Dipanjana", 
+             "releaseNote": "Engineering changes: 1. Added support for newer printers. 2.Upgrade scenario:- The recommended method to use this latest v5.3.0.0 of Scanback is to uninstall any previous versions of the application and then install the new application." 
+         } 
+     } 
+}</con:request><con:originalUri>https://support-api.web.dev.a.lexmark.com/v1/enqueue</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="d0bb99fd-d70d-4fb2-8cfa-a8fbf1e8554a" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Copy of Add 2566" id="d54fbd84-bfca-4a3a-b434-bba8e9dbfcd4" disabled="true"><con:settings/><con:config service="https://support-api.web.a.lexmark.com/" resourcePath="/v1/enqueue" methodName="Add Data" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Copy of Add 2566" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-api-key" value="7EylMrRcm27ZEjGC8zYB475q0qSIdMG6txyYOH6d"/>
+  &lt;con:entry key="Content-Type" value="application/json;charset=UTF-8"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://support-api.web.a.lexmark.com</con:endpoint><con:request>{ 
+     "id": "dipanjana_k",
+     "action": "add", 
+     "type": "Utility", 
+     "fileName": "dipanjana-through-API.exe", 
+     "version": "5.3.0.0", 
+     "size": "12193536", 
+     "url": "https://downloads.lexmark.com/downloads/drivers/Lexmark_ScanBack_11192019.exe", 
+     "datastreams": ["n/a"], 
+     "locales": ["en_US", "es_ES"], 
+     "systems": ["WINDOWS_7_X64", "WINDOWS_10_64BIT"], 
+     "models": ["Lexmark MX610", "Lexmark MX617", "Lexmark MB3442", "Lexmark MC3326"], 
+     "categories": ["All-In-One", "Color Laser"], 
+     "recommended": true, 
+     "userGroup": "External", 
+     "author": "dkundu", 
+     "owner": "pcote", 
+     "created": "2020-04-13T12:47:56", 
+     "start": "2020-04-13T12:47:56", 
+     "lastModified": "2021-04-12T12:47:56", 
      "details": { 
          "en_US": { 
              "description": "Added through API from Dipanjana", 
