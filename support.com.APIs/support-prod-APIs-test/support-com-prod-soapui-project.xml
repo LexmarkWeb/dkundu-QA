@@ -133,7 +133,7 @@
      "owner": "pcote", 
      "created": "2020-04-13T12:47:56", 
      "start": "2020-04-13T12:47:56", 
-     "lastModified": "2020-02-23T12:47:56", 
+     "lastModified": "2021-06-11T12:47:56", 
      "details": { 
          "en_US": { 
              "description": "Added through API from Dipanjana", 
@@ -175,7 +175,7 @@ testRunner.testCase.getTestStepByName('Doc-id').setPropertyValue('doc-id',value)
      "owner": "pcote", 
      "created": "2020-04-13T12:47:56", 
      "start": "2020-04-13T12:47:56", 
-     "lastModified": "2020-12-09T12:47:56", 
+     "lastModified": "2021-06-11T12:47:56", 
      "details": { 
          "en_US": { 
              "description": "Added through API from Dipanjana", 
@@ -223,7 +223,7 @@ catch (AssertionError e)
 {
 	log.info "Document id assertion failed"
 	throw e
-}</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="7e9ed0c7-159f-4c8f-92a5-e5fbfa4feaa0" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Solr Search after addition" id="9d5fff66-43d8-4ee7-abdf-62f7e20c9e09"><con:settings/><con:config service="https://www.lexmark.com/" resourcePath="/bin/lexmark/support/solr/search.json" methodName="Solr" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Solr Search after addition" id="4d803e5b-dc20-4b8b-8005-e56d022bcbd1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://www.lexmark.com/</con:endpoint><con:request/><con:originalUri>https://www-dev.lexmark.com/bin/lexmark/support/solr/search.json</con:originalUri><con:assertion type="JsonPath RegEx Match" id="56ba4f80-55bf-480c-b1fd-98877ba9997b" name="JsonPath RegEx Match" disabled="true"><con:configuration><path>$.[-1:].id</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>dipanjana_k</regEx></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="081171f3-468e-448d-9ce9-d7dc35869034" name="JsonPath Match" disabled="true"><con:configuration><path>$.[7].id</path><content>dipanjana_k</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="e2879dbc-bc84-473a-aab1-fccba2b884f1" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="9abbdf41-7a66-4d72-a63a-89bed4679549" name="2nd Try @ Scripting"><con:configuration><scriptText>import groovy.json.JsonSlurper
+}</scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="7e9ed0c7-159f-4c8f-92a5-e5fbfa4feaa0" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Solr Search after addition" id="9d5fff66-43d8-4ee7-abdf-62f7e20c9e09"><con:settings/><con:config service="https://www.lexmark.com/" resourcePath="/bin/lexmark/support/solr/search.json" methodName="Solr" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Solr Search after addition" id="4d803e5b-dc20-4b8b-8005-e56d022bcbd1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://www.lexmark.com/</con:endpoint><con:request/><con:originalUri>https://www-dev.lexmark.com/bin/lexmark/support/solr/search.json</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="e2879dbc-bc84-473a-aab1-fccba2b884f1" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="9abbdf41-7a66-4d72-a63a-89bed4679549" name="2nd Try @ Scripting - old" disabled="true"><con:configuration><scriptText>import groovy.json.JsonSlurper
 
 log.info "Validating new Push"
 
@@ -248,7 +248,7 @@ catch (AssertionError e)
 {
 	log.info "New entry not found"
 	throw e
-}</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="1ad457e7-858f-4d62-a1e8-03965c063b09" name="Array list Script"><con:configuration><scriptText>import groovy.json.JsonSlurper
+}</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="1ad457e7-858f-4d62-a1e8-03965c063b09" name="Array list Script - old" disabled="true"><con:configuration><scriptText>import groovy.json.JsonSlurper
 
 log.info "Validating new Push"
 
@@ -273,6 +273,57 @@ catch (AssertionError e)
 {
 	log.info "New entry not found"
 	throw e
+}</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="28fc7877-2564-44ce-a284-2d124c622cb0" name="2nd Try @ Scripting"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+log.info "Validating new Push"
+
+def ResponseMessage = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
+
+try{
+//jsonSlurper.each{
+
+//log.info "Inside TRY" + jsonSlurper.driverList(0).id
+	for (int i = 0; i &lt; jsonSlurper.driverList.size(); i++)
+	{ 
+		if (jsonSlurper.driverList[i].id == "dipanjana_k")
+		{log.info "Inside IF"
+		log.info " jsonSlurper.driverList[i].id : " + jsonSlurper.driverList[i].id
+		log.info "Entry Found"
+		break
+		}
+	}
+}
+
+catch (AssertionError e)
+{
+	log.info "New entry not found"
+	throw e
+}</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="92951fa8-fe33-4c3b-84fb-eda806bb3d2c" name="Array List Script"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+log.info "Validating new Push"
+
+def ResponseMessage = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
+
+try{
+//jsonSlurper.each{
+// def idList = jsonSlurper.id.value
+def id_driver_List = jsonSlurper.driverList.id
+	for (int i = 0; i &lt; id_driver_List.size(); i++)
+	{ log.info "IDS are : " + id_driver_List[i]
+		if (id_driver_List[i] == 'dipanjana_k')
+		{log.info "Inside IF"
+		log.info "Test Entry pushed is Found : " + id_driver_List[i]
+		break
+		}
+	}
+}
+
+catch (AssertionError e)
+{
+	log.info "New entry not found"
+	throw e
 }</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
   <con:entry key="q" value="*"/>
   <con:entry key="model" value="Lexmark CX310"/>
@@ -280,7 +331,7 @@ catch (AssertionError e)
 </con:parameters><con:parameterOrder><con:entry>model</con:entry><con:entry>q</con:entry><con:entry>locale</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Install API" id="68dc5462-33f4-4b86-bdff-68dec54f1f76"><con:settings/><con:config service="https://www.lexmark.com/" resourcePath="/bin/lexmark/api/support/v1/downloads" methodName="Install API" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Install API" id="7a155229-a4b8-4bf1-b380-7581f6cbbbcd" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="installer-api-access" value="_in5tall_@p1~Acc3ss!_"/>
   &lt;con:entry key="Content-Type" value="application/json "/>
-&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://www.lexmark.com</con:endpoint><con:request/><con:originalUri>https://www.lexmark.com/bin/lexmark/api/support/v1/downloads</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="fdf9957d-63b0-48a1-be2d-2a8919588899" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="9e866e6e-255c-4af6-99b9-a2e8ac40205a" name="JsonPath RegEx Match id"><con:configuration><path>$.[0].id</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>FW5882365975</regEx></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="feed594c-deea-4d85-ab44-90598b1baeb4" name="JsonPath RegEx Match title"><con:configuration><path>$.[0].title</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>MXLSG.074.258.zip</regEx></con:configuration></con:assertion><con:credentials><con:username>installer-api-access</con:username><con:password>_in5tall_@p1~Acc3ss!_</con:password><con:domain/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://www.lexmark.com</con:endpoint><con:request/><con:originalUri>https://www.lexmark.com/bin/lexmark/api/support/v1/downloads</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="fdf9957d-63b0-48a1-be2d-2a8919588899" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="9e866e6e-255c-4af6-99b9-a2e8ac40205a" name="JsonPath RegEx Match id"><con:configuration><path>$.driverList.[0].id</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>FW5882365975</regEx></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="feed594c-deea-4d85-ab44-90598b1baeb4" name="JsonPath RegEx Match title"><con:configuration><path>$.driverList.[0].title</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>MXLSG.074.258.zip</regEx></con:configuration></con:assertion><con:credentials><con:username>installer-api-access</con:username><con:password>_in5tall_@p1~Acc3ss!_</con:password><con:domain/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
   <con:entry key="model" value="MB2236"/>
   <con:entry key="locale" value="en_US"/>
 </con:parameters><con:parameterOrder><con:entry>model</con:entry><con:entry>locale</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="Delay before Delete" id="aa169594-88eb-4da0-bfa2-d3f58961a888"><con:settings/><con:config><delay>50000</delay></con:config></con:testStep><con:testStep type="restrequest" name="Delete" id="74940077-3ed7-4935-9402-709c54ff7145"><con:settings/><con:config service="https://support-api.web.a.lexmark.com/" resourcePath="/v1/enqueue" methodName="Delete Data" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete" id="954a3091-2fae-4fa5-9a85-5e764f60556b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
@@ -289,7 +340,7 @@ catch (AssertionError e)
 &lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://support-api.web.a.lexmark.com</con:endpoint><con:request>{ 
      "id": "${Doc-id#doc-id}",
      "action": "remove"
-}</con:request><con:originalUri>https://support-api.web.dev.a.lexmark.com/v1/enqueue</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="70b8931e-f29c-4690-994d-a052e1904bb7" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="Delay after Delete" id="c573b2c4-feca-4deb-a8ec-1e670543e94f"><con:settings/><con:config><delay>50000</delay></con:config></con:testStep><con:testStep type="restrequest" name="Solr Search after deletion" id="95ab6e67-f6fb-4d63-95c4-ae1de401b9e0"><con:settings/><con:config service="https://www.lexmark.com/" resourcePath="/bin/lexmark/support/solr/search.json" methodName="Solr" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Solr Search after deletion" id="4d803e5b-dc20-4b8b-8005-e56d022bcbd1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://www.lexmark.com/</con:endpoint><con:request/><con:originalUri>https://www-dev.lexmark.com/bin/lexmark/support/solr/search.json</con:originalUri><con:assertion type="JsonPath RegEx Match" id="56ba4f80-55bf-480c-b1fd-98877ba9997b" name="JsonPath RegEx Match" disabled="true"><con:configuration><path>$.[-1:].id</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>dipanjana_k</regEx></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="081171f3-468e-448d-9ce9-d7dc35869034" name="JsonPath Match" disabled="true"><con:configuration><path>$.[1].id</path><content>FW1166293</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="beb8c5e3-67dd-47d9-802d-423f4b000904" name="JsonPath RegEx Match Id"><con:configuration><path>$[1]:id</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>[dipanjana_k]</regEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="19a28bfe-5782-4cef-b4d5-80c0f7c4efee" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="d9deca19-e755-4134-82e5-58f2c495ec4f" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+}</con:request><con:originalUri>https://support-api.web.dev.a.lexmark.com/v1/enqueue</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="70b8931e-f29c-4690-994d-a052e1904bb7" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="delay" name="Delay after Delete" id="c573b2c4-feca-4deb-a8ec-1e670543e94f"><con:settings/><con:config><delay>50000</delay></con:config></con:testStep><con:testStep type="restrequest" name="Solr Search after deletion" id="95ab6e67-f6fb-4d63-95c4-ae1de401b9e0"><con:settings/><con:config service="https://www.lexmark.com/" resourcePath="/bin/lexmark/support/solr/search.json" methodName="Solr" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Solr Search after deletion" id="4d803e5b-dc20-4b8b-8005-e56d022bcbd1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://www.lexmark.com/</con:endpoint><con:request/><con:originalUri>https://www-dev.lexmark.com/bin/lexmark/support/solr/search.json</con:originalUri><con:assertion type="JsonPath RegEx Match" id="beb8c5e3-67dd-47d9-802d-423f4b000904" name="JsonPath RegEx Match Id"><con:configuration><path>$.recommendationList.[1]:id</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>[dipanjana_k]</regEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="19a28bfe-5782-4cef-b4d5-80c0f7c4efee" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="d9deca19-e755-4134-82e5-58f2c495ec4f" name="Script Assertion - old" disabled="true"><con:configuration><scriptText>import groovy.json.JsonSlurper
 
 log.info "Validating new Push"
 
@@ -315,7 +366,7 @@ catch (AssertionError e)
 {
 	log.info "New entry not found"
 	throw e
-}</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="92015464-2a6e-4815-a027-f71883186de5" name="2nd try @ Scripting"><con:configuration><scriptText>import groovy.json.JsonSlurper
+}</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="92015464-2a6e-4815-a027-f71883186de5" name="2nd try @ Scripting - old" disabled="true"><con:configuration><scriptText>import groovy.json.JsonSlurper
 
 log.info "Validating new Push"
 
@@ -331,6 +382,58 @@ try{
 		{log.info "Inside IF"
 		log.info " jsonSlurper[i].id : " + jsonSlurper[i].id
 		log.info "Entry Found"
+		break
+		}
+	}
+	log.info "Required id not found : Deleted successfully"
+}
+
+catch (AssertionError e)
+{
+	log.info "New entry not found"
+	throw e
+}</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="06305d75-c30f-466b-939a-7b03cdd8ea18" name="2nd Try @ Scripting"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+log.info "Validating new Push"
+
+def ResponseMessage = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
+
+try{
+//jsonSlurper.each{
+ //log.info "Inside TRY" + jsonSlurper.(0).id
+	for (int i = 0; i &lt; jsonSlurper.driverList.size(); i++)
+	{ 
+		if (jsonSlurper.driverList[i].id == "dipanjana_k")
+		{log.info "Inside IF"
+		log.info " jsonSlurper.driverList[i].id : " + jsonSlurper.driverList[i].id
+		log.info "Entry Found"
+		break
+		}
+	}
+	log.info "Required id not found : Deleted successfully"
+}
+
+catch (AssertionError e)
+{
+	log.info "New entry not found"
+	throw e
+}</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="8c4bacfb-af2b-4c82-b56e-4dac7f0c219b" name="Array List Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+log.info "Validating new Push"
+
+def ResponseMessage = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
+
+try{
+
+// def idList = jsonSlurper.id.value
+def id_driver_List = jsonSlurper.driverList.id
+	for (int i = 0; i &lt; id_driver_List.size(); i++)
+	{ log.info "IDS are :  " + id_driver_List[i]
+		if (id_driver_List[i] == 'dipanjana_k')
+		{log.info "Inside IF"
+		log.info "Test Entry pushed is Found : " + id_driver_List[i]
 		break
 		}
 	}
