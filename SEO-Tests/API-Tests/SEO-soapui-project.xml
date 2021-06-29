@@ -13,7 +13,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.70
+def expected = 0.60
 
 try
 {
@@ -91,7 +91,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.70
+def expected = 0.60
 
 try
 {
@@ -143,7 +143,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.70
+def expected = 0.60
 
 try
 {
@@ -169,7 +169,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.70
+def expected = 0.60
 
 try
 {
@@ -195,7 +195,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.70
+def expected = 0.60
 
 try
 {
@@ -247,7 +247,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.80
+def expected = 0.70
 
 try
 {
@@ -273,7 +273,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.75
+def expected = 0.50
 
 try
 {
@@ -299,7 +299,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.75
+def expected = 0.50
 
 try
 {
@@ -325,7 +325,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.65
+def expected = 0.60
 
 try
 {
@@ -377,7 +377,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.80
+def expected = 0.60
 
 try
 {
@@ -403,7 +403,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.80
+def expected = 0.60
 
 try
 {
@@ -429,7 +429,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.80
+def expected = 0.60
 
 try
 {
@@ -455,7 +455,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.80
+def expected = 0.60
 
 try
 {
@@ -481,7 +481,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.70
+def expected = 0.60
 
 try
 {
@@ -507,7 +507,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.80
+def expected = 0.60
 
 try
 {
@@ -559,7 +559,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.80
+def expected = 0.60
 
 try
 {
@@ -585,7 +585,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.80
+def expected = 0.60
 
 try
 {
@@ -637,7 +637,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.70
+def expected = 0.60
 
 try
 {
@@ -689,7 +689,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.75
+def expected = 0.65
 
 try
 {
@@ -845,7 +845,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.15
+def expected = 0.10
 
 try
 {
@@ -871,7 +871,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.20
+def expected = 0.10
 
 try
 {
@@ -949,7 +949,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.15
+def expected = 0.10
 
 try
 {
@@ -1000,7 +1000,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.20
+def expected = 0.15
 
 try
 {
@@ -1026,7 +1026,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.20
+def expected = 0.15
 
 try
 {
@@ -1052,7 +1052,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.25
+def expected = 0.15
 
 try
 {
@@ -1078,7 +1078,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.20
+def expected = 0.15
 
 try
 {
@@ -1104,7 +1104,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.2
+def expected = 0.15
 
 try
 {
@@ -1130,7 +1130,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.25
+def expected = 0.15
 
 try
 {
@@ -1156,7 +1156,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.25
+def expected = 0.15
 
 try
 {
@@ -1208,7 +1208,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.25
+def expected = 0.15
 
 try
 {
@@ -1234,7 +1234,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.20
+def expected = 0.15
 
 try
 {
@@ -1286,7 +1286,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.20
+def expected = 0.15
 
 try
 {
@@ -1312,7 +1312,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.20
+def expected = 0.15
 
 try
 {
@@ -1364,7 +1364,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.20
+def expected = 0.15
 
 try
 {
@@ -1468,7 +1468,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.20
+def expected = 0.15
 
 try
 {
@@ -1520,7 +1520,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.40
+def expected = 0.30
 
 try
 {
@@ -1546,7 +1546,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.4
+def expected = 0.3
 
 try
 {
@@ -1572,7 +1572,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.40
+def expected = 0.30
 
 try
 {
@@ -1598,7 +1598,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.40
+def expected = 0.30
 
 try
 {
@@ -1624,7 +1624,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.40
+def expected = 0.30
 
 try
 {
@@ -1650,7 +1650,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.40
+def expected = 0.30
 
 try
 {
@@ -1676,7 +1676,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.40
+def expected = 0.30
 
 try
 {
@@ -1702,7 +1702,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.40
+def expected = 0.30
 
 try
 {
@@ -1728,7 +1728,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.35
+def expected = 0.3
 
 try
 {
@@ -1754,7 +1754,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.35
+def expected = 0.3
 
 try
 {
@@ -1780,7 +1780,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.35
+def expected = 0.3
 
 try
 {
@@ -2040,7 +2040,7 @@ def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
 
 PerformanceScore = jsonSlurper.lighthouseResult.categories.performance.score
 log.info "PerformanceScore is : " + PerformanceScore
-def expected = 0.15
+def expected = 0.10
 
 try
 {
